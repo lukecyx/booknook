@@ -1,4 +1,4 @@
-import { pxToRem } from "@/utils/theme";
+import { pxToRem } from "../utils";
 
 export const baseTheme = {
   colors: {
@@ -15,6 +15,11 @@ export const baseTheme = {
     textInverted: "#FFFFFF",
 
     disabled: "#A0A0A0",
+  },
+
+  radius: {
+    sm: pxToRem(4),
+    md: pxToRem(8),
   },
 
   hover: {

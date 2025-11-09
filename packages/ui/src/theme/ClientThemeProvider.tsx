@@ -2,9 +2,14 @@
 
 import { ThemeProvider } from "styled-components";
 
-import { baseTheme, GlobalStyles } from "ui";
+import { GlobalStyles } from "./GlobalStyles";
+import { baseTheme } from "./theme";
 
-export function ThemeWrapper({ children }: { children: React.ReactNode }) {
+export function ClientThemeProvider({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <ThemeProvider theme={baseTheme}>
       <GlobalStyles />

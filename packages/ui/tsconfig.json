@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": true, // generate types
+    "declarationMap": true, // optional sourcemaps
+    "outDir": "dist", // build output
+    "composite": true, // needed for project references
+    "emitDeclarationOnly": true, // only emit .d.ts, no JS
+    "noEmit": false
+  },
+  "include": ["src"]
+}

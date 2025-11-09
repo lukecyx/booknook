@@ -1,4 +1,7 @@
+"use client";
+
 import { createGlobalStyle, css } from "styled-components";
+import type { FC } from "react";
 
 const srOnly = css`
   position: absolute;
@@ -12,7 +15,7 @@ const srOnly = css`
   border: 0;
 `;
 
-export const GlobalStyles = createGlobalStyle`
+export const GlobalStyles: FC = createGlobalStyle`
   @font-face {
     font-family: "Windows95";
     src:
